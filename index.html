@@ -1,0 +1,249 @@
+<!--TITLE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED SEPTEMBER</title>
+    <style>
+        /* CSS for Header */
+        header {
+            background-color: #000000; /* Black background */
+            color: #ff0000; /* White text */
+            padding: 40px; /* Padding around content */
+            text-align: center; /* Center align text */
+            
+        }
+        h1 {
+            margin: 0; /* Remove default margin for h1 */
+            font-family: 'Courier New', Courier, 'Lucida Console', monospace;
+            letter-spacing: 0.1em; /* Increase letter spacing */
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Red September</h1>
+    </header>
+</body>
+</html>
+
+<!--BACKGROUND BLACK-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Background</title>
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Set text color to white for better contrast */
+        }
+    </style>
+</head>
+<body>
+    <!-- Your website content goes here -->
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        section:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<!--NAVIGATION AND PAGES-->
+<nav>
+    <ul>
+        <li><a href="#mors">Mors</a></li>
+        <li><a href="#turim">Turim</a></li>
+        <li><a href="#amantes">Amantes</a></li>
+        <li><a href="#diabolus">Diabolus</a></li>
+    </ul>
+</nav>
+
+<section id="mors" style="text-align: left;">
+    <div style="text-align: center;">
+        <h2>Mors</h2>
+    </div>
+    <p id="mors-paragraph-1">
+        [Translated from Polish]
+        December 17, 1947
+        Incident Report: Missing Train Update
+        
+        Train expected to arrive at Warsaw station at midnight December 8 from the sanatorium, for further eastward travel, failed to meet its schedule, 
+        disappearing somewhere on the 24 mile train line between the sanatorium and Warsaw station amidst a heavy snowstorm. 
+        
+        Delay initially assumed to be caused by temporary snow obstruction. However, repeated failure to establish radio contact and further failure of 
+        the train to arrive for the entirety of December 9 raised alarms, and a search team was deployed as soon as the weather allowed, late in the 
+        afternoon of December 10 from both the outskirts of Warsaw, following the track south-east.
+        
+        Train was discovered stationary, approximately 10 miles from the sanatorium at around 2200. All reported crew members were missing, 
+        despite no apparent damage to the locomotive itself, and coal stocks are still relatively high. The cargo itself, 
+        despite being in early stages of decomposition, was not disturbed when found.</p>
+
+    <p id="mors-paragraph-2" class="hidden">
+        [Translated from Morse Code]
+        B7 -  75 TB [12 x 75] - 20-12-1947</p>
+
+    <p id="mors-paragraph-3" class="hidden">
+        Sixty years we cheated death and played gods, and as even Moscow and Stalingrad and Berlin became old victories, 
+        and all our enemies became old ghosts, we began to believe it ourselves - eventually we stopped counting altogether 
+        and the calendar remained frozen at 1949, even as the iron curtain was drawn shut, and the cold war went hot on four 
+        continents and new superpowers chased godhood of their own, we watched and laughed and drooled into our wines and cakes 
+        and sweetmeats, slumped limp in a drunken stupor over silken pillows, fondly reminding ourselves of past glories, 
+        dreaming ourselves still strong, convinced we were the sole owners of immortality, even as enemies gathered at the gates
+        and the fountain ran dry.</p>
+</section>
+
+<script>
+    // Function to hide all paragraphs except one
+    function hideAllParagraphs() {
+        document.querySelectorAll('#mors p').forEach(paragraph => {
+            paragraph.classList.add('hidden');
+        });
+    }
+
+    // Function to randomly show one paragraph
+    function showRandomParagraph() {
+        hideAllParagraphs(); // Hide all paragraphs first
+
+        var randomIndex = Math.floor(Math.random() * 3) + 1; // Generate random index (1 to 3)
+        var selectedParagraph = document.getElementById('mors-paragraph-' + randomIndex);
+        selectedParagraph.classList.remove('hidden'); // Show the selected paragraph
+    }
+
+    // Call the function to show a random paragraph when the page is loaded
+    window.onload = showRandomParagraph;
+</script>
+
+
+<section id="turim">
+    <h2>Turim Page Content</h2>
+    <!-- Content for the Turim page -->
+</section>
+
+<section id="amantes">
+    <h2>Amantes Page Content</h2>
+    <!-- Content for the Amantes page -->
+</section>
+
+<section id="diabolus">
+    <h2>Diabolus Page Content</h2>
+    <!-- Content for the Diabolus page -->
+</section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Toggle Example</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, 'Lucida Console', monospace;
+            text-transform: uppercase; /* Transform text to uppercase */
+            color: red; /* Set text color */
+            text-align: center; /* Center align the content */
+        }
+
+        nav {
+            margin-top: 20px; /* Add margin to the top */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove default list style */
+            padding: 0; /* Remove default padding */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Add margin between list items */
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Remove margin from the last list item */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color from parent */
+        }
+
+        nav ul li a:hover {
+            color: gray; /* Change text color on hover */
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation toggle button -->
+    
+    <!-- Navigation menu -->
+    <nav id="nav-menu" class="hidden">
+        <ul>
+            <li><a href="mors.html">Mors</a></li>
